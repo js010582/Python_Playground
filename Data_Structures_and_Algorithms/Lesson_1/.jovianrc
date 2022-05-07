@@ -2,6 +2,9 @@
   "notebooks": {
     "python-problem-solving-template.ipynb": {
       "slug": "b94ed24d4b34430287a01a5cb5d9b53c"
+    },
+    "Assignment_1.ipynb": {
+      "slug": "91afc4268735438db3bc01f947d0b8e0"
     }
   }
 }
