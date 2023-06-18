@@ -2,7 +2,7 @@ import socket
 
 # localIP     = "127.0.0.1"
 localIP = "192.168.2.1"
-localPort   = 20001
+localPort   = 8080
 bufferSize  = 1024
 
 msgFromServer       = "Hello UDP Client"
@@ -21,7 +21,6 @@ while(True):
     bytesAddressPair = UDPServerSocket.recvfrom(bufferSize)
 
     message = bytesAddressPair[0]
-
     address = bytesAddressPair[1]
 
     clientMsg = "Message from Client:{}".format(message)

@@ -2,7 +2,7 @@ import socket
 
 msgFromClient       = "Hello UDP Server"
 bytesToSend         = str.encode(msgFromClient)
-serverAddressPort   = ("192.168.2.1", 20001)
+serverAddressPort   = ("192.168.2.1", 8080)
 bufferSize          = 1024
 
 # Create a UDP socket at client side
@@ -10,7 +10,7 @@ UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 
 # Specify the IP address to use
 clientIP = "192.168.2.2"  # Replace with the desired client IP
-clientPort = 0  # If set to 0, the OS will select a random available port
+clientPort = 20001  # If set to 0, the OS will select a random available port
 
 # Bind the socket to the client's IP address and a port
 UDPClientSocket.bind((clientIP, clientPort))
