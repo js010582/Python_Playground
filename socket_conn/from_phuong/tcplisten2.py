@@ -11,7 +11,6 @@ bytesToSend = msgFromServer
 
 # Create a TCP socket
 TCPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
-
 # Bind the socket to the IP address and port
 TCPServerSocket.bind((localIP, localPort))
 
