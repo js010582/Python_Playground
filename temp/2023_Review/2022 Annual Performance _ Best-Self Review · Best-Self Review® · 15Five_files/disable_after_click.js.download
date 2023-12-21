@@ -1,0 +1,14 @@
+(() => {
+  'use strict';
+
+  const elements = document.querySelectorAll('[data-disable-after-click]');
+  elements.forEach(element => {
+    element.addEventListener('click', () => {
+      if (element.tagName === 'BUTTON') {
+        element.setAttribute('disabled', '');
+      } else {
+        element.classList.add('pointer-events-none');
+      }
+    });
+  });
+})();
